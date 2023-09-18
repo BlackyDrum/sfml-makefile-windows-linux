@@ -8,10 +8,10 @@ OBJECTS=$(SOURCES:.cpp=.o)
 
 ifeq ($(OS),Windows_NT)
 	EXECUTABLE = $(APP_NAME).exe
-	LIBS = $(SFML_PATH)\lib\libsfml-graphics.a $(SFML_PATH)\lib\libsfml-window.a $(SFML_PATH)\lib\libsfml-system.a $(SFML_PATH)\lib\libsfml-audio.a
+	LIBS = $(SFML_PATH)\lib\libsfml-graphics.a $(SFML_PATH)\lib\libsfml-window.a $(SFML_PATH)\lib\libsfml-system.a $(SFML_PATH)\lib\libsfml-audio.a $(SFML_PATH)\lib\libsfml-network.a
 else
 	EXECUTABLE = $(APP_NAME)  
-	LIBS = -lsfml-graphics -lsfml-window -lsfml-system -lsfml-audio
+	LIBS = -lsfml-graphics -lsfml-window -lsfml-system -lsfml-audio -lsfml-network
 endif
 
 .PHONY: all clean
