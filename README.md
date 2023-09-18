@@ -37,7 +37,7 @@ your-sfml-project/
 ```
 
 ## Usage
-Open the Makefile in a text editor and customize the following variables to match your project's requirements:
+Open the ``Makefile`` in a text editor and customize the following variables to match your project's requirements:
 - **CC**: The C++ compiler (typically g++)
 - **CFLAGS**: Compiler flags (e.g., -std=c++17 -Wall -Wextra -pedantic -g)
 - **INCLUDES**: Additional include directories (e.g., -I$(SFML_PATH)/include -Iinclude)
