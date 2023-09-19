@@ -1,7 +1,7 @@
 CC = g++
 CFLAGS = -std=c++17 -Wall -Wextra -pedantic -g
 INCLUDES = -I$(SFML_PATH)\include -Iinclude
-APP_NAME=my-app
+APP_NAME= my-app
 
 SOURCES=$(wildcard src/*.cpp)
 OBJECTS=$(SOURCES:.cpp=.o)
